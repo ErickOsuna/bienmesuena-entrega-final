@@ -1,0 +1,931 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,800;1,200;1,300;1,500;1,800&display=swap");
+/* *INICIO DEL RESET */
+* {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+.grid-layout {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "encabezado encabezado encabezado encabezado encabezado" "cuerpo cuerpo cuerpo cuerpo cuerpo" "pie pie pie pie pie";
+  grid-auto-rows: 200px; }
+
+/* ! FIN DEL RESET */
+* {
+  padding: 0;
+  margin: 0; }
+
+.encabezado ul, .encabezado div, .cuerpo, .primeraSeccion, .aphorism, .music, .titulo h2, .nosotros, #director, .boton2, .pie-flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid-gallery, .grid-gallery2 {
+  display: grid;
+  width: 100%;
+  height: auto;
+  gap: 15px 15px;
+  margin: 50px 0; }
+
+#director h3, #sopranos h3, #contraltos h3, #tenores h3, #bajos h3 {
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px 0 30px 0; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+.encabezado ul, .encabezado div, .cuerpo, .primeraSeccion, .aphorism, .music, .titulo h2, .nosotros, #director, .boton2, .pie-flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid-gallery, .grid-gallery2 {
+  display: grid;
+  width: 100%;
+  height: auto;
+  gap: 15px 15px;
+  margin: 50px 0; }
+
+#director h3, #sopranos h3, #contraltos h3, #tenores h3, #bajos h3 {
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px 0 30px 0; }
+
+/* * INICIO DEL HEADER */
+.encabezado {
+  background-color: black;
+  width: 100%;
+  grid-area: encabezado;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  -webkit-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  position: sticky;
+  top: 0;
+  z-index: 100; }
+  .encabezado ul {
+    /* background-color: rgb(176, 176, 248); */
+    width: 100%;
+    height: auto;
+    color: white;
+    padding: 5px;
+    margin: 5px 0; }
+    .encabezado ul li {
+      padding: 10px 25px;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 200;
+      transition: 0.6s;
+      text-decoration: none; }
+    .encabezado ul a:link {
+      color: white;
+      text-decoration: none; }
+    .encabezado ul a:visited {
+      color: white;
+      text-decoration: none; }
+    .encabezado ul a:hover {
+      color: red;
+      text-decoration: none; }
+    .encabezado ul a:active {
+      color: #ff4949;
+      text-decoration: none; }
+  .encabezado div {
+    /* background-color: aquamarine; */
+    width: auto;
+    height: auto;
+    padding: 5px 60px 5px 10px; }
+  .encabezado h1 {
+    font-weight: 200;
+    font-size: 22px; }
+
+.dropdown {
+  visibility: hidden; }
+
+.erick-boton {
+  border: 1px solid white; }
+
+/* ! FIN DEL HEADER */
+* {
+  padding: 0;
+  margin: 0; }
+
+.encabezado ul, .encabezado div, .cuerpo, .primeraSeccion, .aphorism, .music, .titulo h2, .nosotros, #director, .boton2, .pie-flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid-gallery, .grid-gallery2 {
+  display: grid;
+  width: 100%;
+  height: auto;
+  gap: 15px 15px;
+  margin: 50px 0; }
+
+#director h3, #sopranos h3, #contraltos h3, #tenores h3, #bajos h3 {
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px 0 30px 0; }
+
+/* * INICIO DEL MAIN DEL INDEX */
+.cuerpo {
+  grid-area: cuerpo;
+  width: 100%;
+  flex-direction: column; }
+
+.primeraSeccion {
+  width: 100%;
+  height: 100px;
+  margin: 30px;
+  flex-direction: column; }
+  .primeraSeccion h2 {
+    font-size: 50px;
+    font-weight: 200; }
+  .primeraSeccion h3 {
+    font-size: 30px;
+    font-weight: 200;
+    font-style: italic; }
+
+.hero {
+  background-image: url("../img/fondo-inicio1.jpg");
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-box-shadow: inset 0px 0px 30px 20px rgba(0, 0, 0, 0.87);
+  -moz-box-shadow: inset 0px 0px 30px 20px rgba(0, 0, 0, 0.87);
+  box-shadow: inset 0px 0px 30px 20px rgba(0, 0, 0, 0.87);
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center; }
+  .hero p {
+    margin-left: 100px;
+    margin-right: 200px;
+    font-weight: 200;
+    font-size: 18px;
+    font-style: italic; }
+    .hero p a {
+      text-decoration: none;
+      transition: 0.6s; }
+      .hero p a:link {
+        color: white;
+        text-decoration: none; }
+      .hero p a:visited {
+        color: white;
+        text-decoration: none; }
+      .hero p a:hover {
+        color: red;
+        text-decoration: none; }
+      .hero p a:active {
+        color: #ff4949;
+        text-decoration: none; }
+  .hero h2 {
+    margin-left: 100px;
+    margin-right: 200px;
+    font-weight: 200;
+    font-size: 50px; }
+
+.aphorism {
+  /* background-color: blanchedalmond; */
+  width: 80%;
+  height: auto;
+  flex-direction: column;
+  padding: 30px;
+  margin: 30px 0; }
+  .aphorism p {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    margin: 30px 0; }
+  .aphorism h4 {
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 20px; }
+
+.music {
+  flex-direction: column;
+  width: 100%;
+  height: auto; }
+
+.spoti {
+  width: 50px;
+  margin: 20px; }
+
+audio {
+  margin-bottom: 50px; }
+
+/* ! FIN DEL MAIN DEL INDEX */
+* {
+  padding: 0;
+  margin: 0; }
+
+.encabezado ul, .encabezado div, .cuerpo, .primeraSeccion, .aphorism, .music, .titulo h2, .nosotros, #director, .boton2, .pie-flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid-gallery, .grid-gallery2 {
+  display: grid;
+  width: 100%;
+  height: auto;
+  gap: 15px 15px;
+  margin: 50px 0; }
+
+#director h3, #sopranos h3, #contraltos h3, #tenores h3, #bajos h3 {
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px 0 30px 0; }
+
+/* * INICIO DEL MAIN DE NOSOTROS */
+.titulo h2 {
+  width: 100%;
+  margin: 0;
+  font-weight: 200; }
+
+.nosotros {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  margin: 0; }
+  .nosotros div img {
+    width: 400px; }
+  .nosotros p {
+    width: 80%;
+    margin-top: 80px;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: justify; }
+    .nosotros p span {
+      font-style: italic;
+      font-weight: 300;
+      font-size: 22px; }
+
+.submenu ul {
+  /* background-color: aquamarine; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 40px; }
+  .submenu ul a {
+    padding: 20px;
+    transition: 0.6s;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none; }
+    .submenu ul a:link {
+      color: black; }
+    .submenu ul a:visited {
+      color: black; }
+    .submenu ul a:hover {
+      color: red; }
+    .submenu ul a:active {
+      color: #ff4949; }
+
+.submenu2 {
+  /* background-color: blueviolet; */
+  width: 100%; }
+  .submenu2 ul {
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    display: none; }
+    .submenu2 ul a {
+      padding: 20px;
+      transition: 0.6s;
+      font-weight: 500;
+      font-size: 16px;
+      text-decoration: none; }
+      .submenu2 ul a:link {
+        color: black; }
+      .submenu2 ul a:visited {
+        color: black; }
+      .submenu2 ul a:hover {
+        color: red; }
+      .submenu2 ul a:active {
+        color: #ff4949; }
+
+.submenu3 ul {
+  /* background-color: aquamarine; */
+  width: 100%;
+  height: auto;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  display: none; }
+  .submenu3 ul a {
+    padding: 20px;
+    transition: 0.6s;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none; }
+    .submenu3 ul a:link {
+      color: black; }
+    .submenu3 ul a:visited {
+      color: black; }
+    .submenu3 ul a:hover {
+      color: red; }
+    .submenu3 ul a:active {
+      color: #ff4949; }
+
+#director {
+  width: 100%;
+  height: auto; }
+
+.members {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  padding: 0 50px;
+  text-align: center;
+  margin-bottom: 60px; }
+  .members h4 {
+    font-size: 22px;
+    font-weight: 500;
+    font-style: italic; }
+  .members p {
+    font-size: 18px;
+    font-weight: 200;
+    padding: 20px 0 20px 0;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 0; }
+
+.members2 {
+  width: 90%;
+  height: auto;
+  text-align: center;
+  align-items: center;
+  display: none; }
+  .members2 h4 {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 20px;
+    font-style: italic; }
+  .members2 div p {
+    width: 100%; }
+  .members2 p {
+    font-size: 18px;
+    font-weight: 200;
+    padding: 20px 0 20px 0;
+    text-align: justify; }
+
+/* ! FIN DEL MAIN DE NOSOTROS */
+* {
+  padding: 0;
+  margin: 0; }
+
+.encabezado ul, .encabezado div, .cuerpo, .primeraSeccion, .aphorism, .music, .titulo h2, .nosotros, #director, .boton2, .pie-flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid-gallery, .grid-gallery2 {
+  display: grid;
+  width: 100%;
+  height: auto;
+  gap: 15px 15px;
+  margin: 50px 0; }
+
+#director h3, #sopranos h3, #contraltos h3, #tenores h3, #bajos h3 {
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px 0 30px 0; }
+
+/* * INICIO DEL MAIN DE NOTICIAS */
+.news {
+  display: flex;
+  width: 60%;
+  height: auto;
+  flex-direction: column; }
+  .news h3 {
+    font-size: 40px;
+    font-weight: 200;
+    margin: 40px 0; }
+  .news p {
+    margin: 40px 0;
+    font-weight: 300;
+    font-size: 20px; }
+    .news p a {
+      transition: 0.6s; }
+      .news p a:link {
+        color: black;
+        text-decoration: none; }
+      .news p a:visited {
+        color: black;
+        text-decoration: none; }
+      .news p a:hover {
+        color: red;
+        text-decoration: none; }
+      .news p a:active {
+        color: #ff4949;
+        text-decoration: none; }
+
+/* ! FIN DEL MAIN DE NOTICIAS */
+* {
+  padding: 0;
+  margin: 0; }
+
+.encabezado ul, .encabezado div, .cuerpo, .primeraSeccion, .aphorism, .music, .titulo h2, .nosotros, #director, .boton2, .pie-flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid-gallery, .grid-gallery2 {
+  display: grid;
+  width: 100%;
+  height: auto;
+  gap: 15px 15px;
+  margin: 50px 0; }
+
+#director h3, #sopranos h3, #contraltos h3, #tenores h3, #bajos h3 {
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px 0 30px 0; }
+
+/* * INICIO DEL MAIN DE MULTIMEDIA */
+.grid-gallery {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  transition: 0.6s; }
+  .grid-gallery div img {
+    width: 100%;
+    transition: 0.6s;
+    border: 0.1px solid white; }
+    .grid-gallery div img:hover {
+      scale: 1.8;
+      cursor: pointer; }
+
+.grid-gallery2 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  transition: 0.6s; }
+
+.video4 {
+  grid-row: span 2;
+  grid-column: span 3; }
+
+.boton2 {
+  width: 100%;
+  margin: 50px 0; }
+
+.boton-multimedia {
+  width: 80px; }
+
+.galeria-multimedia {
+  width: 80%;
+  margin: 60px; }
+
+/* ! FIN DEL MAIN DE MULTIMEDIA */
+* {
+  padding: 0;
+  margin: 0; }
+
+.encabezado ul, .encabezado div, .cuerpo, .primeraSeccion, .aphorism, .music, .titulo h2, .nosotros, #director, .boton2, .pie-flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid-gallery, .grid-gallery2 {
+  display: grid;
+  width: 100%;
+  height: auto;
+  gap: 15px 15px;
+  margin: 50px 0; }
+
+#director h3, #sopranos h3, #contraltos h3, #tenores h3, #bajos h3 {
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px 0 30px 0; }
+
+/* *INICIO DEL MAIN DE CONTACTO */
+.contacto {
+  /* background-color: aquamarine; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin: 60px 0; }
+
+.formulario {
+  width: 40%;
+  margin: auto;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  border: 0.5px solid black; }
+  .formulario h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-bottom: 20px; }
+  .formulario input,
+  .formulario textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: 0.5px solid black; }
+  .formulario textarea {
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 100%;
+    max-width: 100%; }
+
+#boton {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 20px; }
+  #boton:hover {
+    background-color: #4e4e4e;
+    cursor: pointer; }
+
+.mapa {
+  /* background-color: rgb(193, 128, 253); */
+  width: 40%;
+  margin: auto; }
+  .mapa h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 200;
+    margin: 20px 0; }
+
+.titulo-encuentranos {
+  display: flex;
+  flex-direction: column;
+  /* background-color: blueviolet; */
+  width: 100%; }
+
+/* ! FIN DEL MAIN DE CONTACTO */
+* {
+  padding: 0;
+  margin: 0; }
+
+.encabezado ul, .encabezado div, .cuerpo, .primeraSeccion, .aphorism, .music, .titulo h2, .nosotros, #director, .boton2, .pie-flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid-gallery, .grid-gallery2 {
+  display: grid;
+  width: 100%;
+  height: auto;
+  gap: 15px 15px;
+  margin: 50px 0; }
+
+#director h3, #sopranos h3, #contraltos h3, #tenores h3, #bajos h3 {
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px 0 30px 0; }
+
+.pie {
+  grid-area: pie;
+  display: flex;
+  width: 100%;
+  color: white;
+  background-color: black;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  -webkit-box-shadow: 0px -7px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -7px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -7px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 8px 0 0 0; }
+  .pie div a {
+    transition: 0.6s;
+    text-decoration: none; }
+    .pie div a:hover {
+      transform: scale(1.3);
+      color: red; }
+    .pie div a:link {
+      color: white; }
+    .pie div a:visited {
+      color: white; }
+    .pie div a:active {
+      color: #ff4949; }
+  .pie img {
+    width: 35px;
+    margin: 5px;
+    transition: 0.6s; }
+    .pie img:hover {
+      transform: scale(1.3); }
+  .pie a:hover {
+    transform: scale(1.3);
+    color: red; }
+  .pie a:link {
+    color: white; }
+  .pie a:visited {
+    color: white; }
+  .pie a:active {
+    color: #ff4949; }
+
+.pie-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  font-weight: 200; }
+
+.pie-flex2 {
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  font-weight: 200;
+  display: none; }
+
+.derechos2 {
+  display: none; }
+
+/* TODO: INICIO @MEDIA QUERIES 1100 PX*/
+@media screen and (max-width: 1100px) {
+  .encabezado ul {
+    padding: 0;
+    margin: 0; }
+  .encabezado div {
+    padding: 5px 10px 5px 5px; }
+  .encabezado ul li {
+    padding: 10px 20px; }
+  .submenu ul a {
+    padding: 10px; } }
+
+/* ? FIN @MEDIA QUERIES 1100 PX*/
+/* TODO: INICIO @MEDIA QUERIES 930 PX*/
+@media screen and (max-width: 930px) {
+  .encabezado ul li {
+    padding: 10px 10px; }
+  #director h3,
+  #sopranos h3,
+  #contraltos h3,
+  #tenores h3,
+  #bajos h3 {
+    /* background-color: coral; */
+    margin: 50px 0 10px 0; }
+  .members {
+    display: none; }
+  .primeraSeccion {
+    margin: 30px 0; }
+  .members2 {
+    display: block; }
+  .pie-flex {
+    width: 100%;
+    scale: 0.8; }
+  .pie-flex ul {
+    margin-left: 0;
+    padding-left: 0; }
+  .pie-flex ul a img {
+    margin: 2px; } }
+
+/* ? FIN @MEDIA QUERIES 930 PX*/
+/* TODO: INICIO @MEDIA QUERIES 830 PX*/
+@media screen and (max-width: 830px) {
+  .encabezado div {
+    flex-direction: column;
+    scale: 0.8; }
+  .encabezado ul {
+    scale: 0.9; }
+  .submenu ul {
+    display: none; }
+  .submenu2 ul {
+    /* background-color: crimson; */
+    display: flex;
+    margin: -20px 0;
+    margin-top: 20px;
+    scale: 0.75; }
+  .submenu3 ul {
+    display: flex;
+    margin: -20px 0;
+    margin-bottom: 20px;
+    scale: 0.75; }
+  .grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 100%;
+    height: auto; }
+  .foto3,
+  .foto6,
+  .foto9 {
+    grid-column: span 2;
+    grid-row: span 2; }
+  .grid-gallery2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    height: auto; }
+  .grid-gallery div img:hover {
+    scale: 1.4;
+    cursor: pointer; }
+  .grid-gallery .foto3 img:hover,
+  .grid-gallery .foto6 img:hover,
+  .grid-gallery .foto9 img:hover {
+    scale: 1.2;
+    cursor: pointer; }
+  .video-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    width: 100%; }
+  .video1,
+  .video2,
+  .video3,
+  .video4,
+  .video5,
+  .video6,
+  .video7 {
+    /* background-color: cadetblue; */
+    grid-column: span 1;
+    grid-row: span 1;
+    width: 100%;
+    height: 299px; }
+  .video1 iframe,
+  .video2 iframe,
+  .video3 iframe,
+  .video4 iframe,
+  .video5 iframe,
+  .video6 iframe,
+  .video7 iframe {
+    width: 100%;
+    height: 100%; }
+  .derechos {
+    display: none; }
+  .derechos2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; } }
+
+/* ? FIN @MEDIA QUERIES 830 PX*/
+/* TODO: INICIO @MEDIA QUERIES 770 PX*/
+@media screen and (max-width: 770px) {
+  .grid-layout {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "encabezado encabezado encabezado" "cuerpo cuerpo cuerpo" "pie pie pie";
+    grid-auto-rows: 200px; }
+  .encabezado ul {
+    display: none; }
+  .dropdown {
+    visibility: visible;
+    margin-left: 300px; }
+  .news {
+    width: 90%; }
+  .news h3 {
+    text-align: center; }
+  .contacto {
+    flex-direction: column; }
+  .formulario {
+    width: 90%;
+    margin-bottom: 50px; }
+  .mapa {
+    width: 80%; }
+  .mapa div h3,
+  .mapa div p {
+    text-align: center;
+    scale: 0.9; }
+  .pie-flex {
+    display: none; }
+  .pie-flex {
+    width: 100%; }
+  .pie-flex2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+  .pie-flex2 p {
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0; }
+  .pie-flex2 img {
+    width: 30px;
+    padding: 5;
+    margin: 0 5px; }
+  .pie-flex2 ul {
+    margin-right: 25px; } }
+
+/* ? FIN @MEDIA QUERIES 770 PX*/
+/* TODO: INICIO @MEDIA QUERIES 620 PX*/
+@media screen and (max-width: 620px) {
+  .dropdown {
+    visibility: visible;
+    margin-left: 100px; }
+  .hero h2 {
+    margin: 0 0 8px 0;
+    text-align: center;
+    scale: 0.9; }
+  .hero p {
+    margin: 0 20px 0 30px;
+    text-align: center;
+    scale: 0.9; }
+  .photo-gallery {
+    /* background-color: aqua; */
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    width: 100%;
+    height: 100%; }
+  .audio-gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    width: 100%;
+    height: 100%; }
+  .foto3,
+  .foto6,
+  .foto9 {
+    grid-column: span 1;
+    grid-row: span 1; }
+  .photo-gallery div img:hover {
+    scale: 1.3;
+    cursor: pointer; }
+  .news h3 {
+    scale: 0.8; } }
+
+/* ? FIN @MEDIA QUERIES 620 PX*/
+/* TODO: INICIO @MEDIA QUERIES 410 PX*/
+@media screen and (max-width: 410px) {
+  .dropdown {
+    visibility: visible;
+    margin-left: 50px; }
+  .primeraSeccion {
+    scale: 0.8; }
+  .hero h2 {
+    scale: 0.8; }
+  .hero p {
+    scale: 0.8; }
+  .news h3 {
+    scale: 0.7; }
+  .submenu2 ul a {
+    padding: 10px; }
+  .submenu3 ul a {
+    padding: 20px 10px; }
+  .formulario {
+    scale: 0.9; } }
+
+/* ? FIN @MEDIA QUERIES 410 PX*/

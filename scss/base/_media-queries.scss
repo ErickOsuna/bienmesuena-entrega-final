@@ -1,0 +1,366 @@
+/* TODO: INICIO @MEDIA QUERIES 1100 PX*/
+
+@media screen and (max-width: 1100px) {
+    .encabezado ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .encabezado div {
+        padding: 5px 10px 5px 5px;
+    }
+
+    .encabezado ul li {
+        padding: 10px 20px;
+    }
+
+    .submenu ul a {
+        padding: 10px;
+    }
+}
+
+/* ? FIN @MEDIA QUERIES 1100 PX*/
+
+/* TODO: INICIO @MEDIA QUERIES 930 PX*/
+
+@media screen and (max-width: 930px) {
+    .encabezado ul li {
+        padding: 10px 10px;
+    }
+
+    #director h3,
+    #sopranos h3,
+    #contraltos h3,
+    #tenores h3,
+    #bajos h3 {
+        /* background-color: coral; */
+        margin: 50px 0 10px 0;
+    }
+
+    .members {
+        display: none;
+    }
+
+    .primeraSeccion {
+        margin: 30px 0;
+    }
+
+    .members2 {
+        display: block;
+    }
+
+    .pie-flex {
+        width: 100%;
+        scale: 0.8;
+    }
+
+    .pie-flex ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .pie-flex ul a img {
+        margin: 2px;
+    }
+}
+
+/* ? FIN @MEDIA QUERIES 930 PX*/
+
+/* TODO: INICIO @MEDIA QUERIES 830 PX*/
+
+@media screen and (max-width: 830px) {
+    .encabezado div {
+        flex-direction: column;
+        scale: 0.8;
+    }
+
+    .encabezado ul {
+        scale: 0.9;
+    }
+
+    .submenu ul {
+        display: none;
+    }
+
+    .submenu2 ul {
+        /* background-color: crimson; */
+        display: flex;
+        margin: -20px 0;
+        margin-top: 20px;
+        scale: 0.75;
+    }
+
+    .submenu3 ul {
+        display: flex;
+        margin: -20px 0;
+        margin-bottom: 20px;
+        scale: 0.75;
+    }
+
+    .grid-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        width: 100%;
+        height: auto;
+    }
+
+    .foto3,
+    .foto6,
+    .foto9 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .grid-gallery2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
+        height: auto;
+    }
+
+    .grid-gallery div img:hover {
+        scale: 1.4;
+        cursor: pointer;
+    }
+
+    .grid-gallery .foto3 img:hover,
+    .grid-gallery .foto6 img:hover,
+    .grid-gallery .foto9 img:hover {
+        scale: 1.2;
+        cursor: pointer;
+    }
+
+    .video-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        width: 100%;
+    }
+
+    .video1,
+    .video2,
+    .video3,
+    .video4,
+    .video5,
+    .video6,
+    .video7 {
+        /* background-color: cadetblue; */
+        grid-column: span 1;
+        grid-row: span 1;
+        width: 100%;
+        height: 299px;
+    }
+
+    .video1 iframe,
+    .video2 iframe,
+    .video3 iframe,
+    .video4 iframe,
+    .video5 iframe,
+    .video6 iframe,
+    .video7 iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .derechos {
+        display: none;
+    }
+
+    .derechos2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* ? FIN @MEDIA QUERIES 830 PX*/
+
+
+/* TODO: INICIO @MEDIA QUERIES 770 PX*/
+
+@media screen and (max-width:770px) {
+
+    .grid-layout {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "encabezado encabezado encabezado"
+            "cuerpo cuerpo cuerpo"
+            "pie pie pie"
+        ;
+        grid-auto-rows: 200px;
+    }
+
+    .encabezado ul {
+        display: none;
+    }
+
+    .dropdown {
+        visibility: visible;
+        margin-left: 300px;
+    }
+
+    .news {
+        width: 90%;
+    }
+
+    .news h3 {
+        text-align: center;
+    }
+
+    .contacto {
+        flex-direction: column;
+    }
+
+    .formulario {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .mapa {
+        width: 80%;
+    }
+
+    .mapa div h3,
+    .mapa div p {
+        text-align: center;
+        scale: 0.9
+    }
+
+    .pie-flex {
+        display: none;
+    }
+
+    .pie-flex {
+        width: 100%;
+    }
+
+    .pie-flex2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .pie-flex2 p {
+        font-size: 12px;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .pie-flex2 img {
+        width: 30px;
+        padding: 5;
+        margin: 0 5px;
+    }
+
+    .pie-flex2 ul {
+        margin-right: 25px;
+    }
+
+}
+
+/* ? FIN @MEDIA QUERIES 770 PX*/
+
+/* TODO: INICIO @MEDIA QUERIES 620 PX*/
+
+@media screen and (max-width:620px) {
+
+    .dropdown {
+        visibility: visible;
+        margin-left: 100px;
+    }
+
+    .hero h2 {
+        margin: 0 0 8px 0;
+        text-align: center;
+        scale: 0.9;
+    }
+
+    .hero p {
+        margin: 0 20px 0 30px;
+        text-align: center;
+        scale: 0.9;
+    }
+
+    .photo-gallery {
+        /* background-color: aqua; */
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        width: 100%;
+        height: 100%;
+    }
+
+    .audio-gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        width: 100%;
+        height: 100%;
+    }
+
+    .foto3,
+    .foto6,
+    .foto9 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .photo-gallery div img:hover {
+        scale: 1.3;
+        cursor: pointer;
+    }
+
+    .news h3 {
+        scale: 0.8;
+    }
+
+}
+
+/* ? FIN @MEDIA QUERIES 620 PX*/
+
+
+/* TODO: INICIO @MEDIA QUERIES 410 PX*/
+
+@media screen and (max-width:410px) {
+
+    .dropdown {
+        visibility: visible;
+        margin-left: 50px;
+    }
+
+    .primeraSeccion {
+        scale: 0.8;
+    }
+
+    .hero h2 {
+        scale: 0.8;
+    }
+
+    .hero p {
+        scale: 0.8;
+    }
+
+    .news h3 {
+        scale: 0.7;
+    }
+
+    .submenu2 ul a {
+        padding: 10px;
+    }
+
+    .submenu3 ul a {
+        padding: 20px 10px;
+    }
+
+    .formulario {
+        scale: 0.9;
+    }
+
+}
+
+/* ? FIN @MEDIA QUERIES 410 PX*/

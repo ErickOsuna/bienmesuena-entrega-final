@@ -1,0 +1,81 @@
+@import "./base/_variables";
+
+/* * INICIO DEL HEADER */
+
+.encabezado {
+    background-color: nth($colores, 1);
+    width: 100%;
+    grid-area: encabezado;
+    color: nth($colores, 2);
+    @include flex (flex, space-around, center);
+    -webkit-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    ul {
+        /* background-color: rgb(176, 176, 248); */
+        @extend %flex;
+        width: 100%;
+        height: auto;
+        color: nth($colores, 2);
+        padding: 5px;
+        margin: 5px 0;
+
+        li {
+            padding: 10px 25px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 200;
+            transition: 0.6s;
+            text-decoration: none;
+        }
+
+        a {
+            &:link {
+                color: nth($colores, 2);
+                text-decoration: none;
+            }
+
+            &:visited {
+                color: nth($colores, 2);
+                text-decoration: none;
+            }
+
+            &:hover {
+                color: nth($colores, 3);
+                text-decoration: none;
+            }
+
+            &:active {
+                color: nth($colores, 4);
+                text-decoration: none;
+            }
+        }
+    }
+
+    div {
+        /* background-color: aquamarine; */
+        @extend %flex;
+        width: auto;
+        height: auto;
+        padding: 5px 60px 5px 10px;
+    }
+
+    h1 {
+        font-weight: 200;
+        font-size: 22px;
+    }
+}
+
+.dropdown {
+    visibility: hidden;
+}
+
+.erick-boton {
+    border: 1px solid nth($colores, 2);
+}
+
+/* ! FIN DEL HEADER */

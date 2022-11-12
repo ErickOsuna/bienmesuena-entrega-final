@@ -1,0 +1,126 @@
+@import "./base/_variables";
+
+/* * INICIO DEL MAIN DEL INDEX */
+.cuerpo {
+    grid-area: cuerpo;
+    @extend %flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.primeraSeccion {
+    width: 100%;
+    height: 100px;
+    margin: 30px;
+    @extend %flex;
+    flex-direction: column;
+
+    h2 {
+        font-size: 50px;
+        font-weight: 200;
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: 200;
+        font-style: italic;
+    }
+}
+
+.hero {
+    background-image: url("../img/fondo-inicio1.jpg");
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-box-shadow: inset 0px 0px 30px 20px rgba(0, 0, 0, 0.87);
+    -moz-box-shadow: inset 0px 0px 30px 20px rgba(0, 0, 0, 0.87);
+    box-shadow: inset 0px 0px 30px 20px rgba(0, 0, 0, 0.87);
+    display: flex;
+    color: nth($colores, 2);
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+        margin-left: 100px;
+        margin-right: 200px;
+        font-weight: 200;
+        font-size: 18px;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+            transition: 0.6s;
+
+            &:link {
+                color: nth($colores, 2);
+                text-decoration: none;
+            }
+
+            &:visited {
+                color: nth($colores, 2);
+                text-decoration: none;
+            }
+
+            &:hover {
+                color: nth($colores, 3);
+                text-decoration: none;
+            }
+
+            &:active {
+                color: nth($colores, 4);
+                text-decoration: none;
+            }
+        }
+    }
+
+    h2 {
+        margin-left: 100px;
+        margin-right: 200px;
+        font-weight: 200;
+        font-size: 50px;
+    }
+}
+
+.aphorism {
+    /* background-color: blanchedalmond; */
+    @extend %flex;
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+    padding: 30px;
+    margin: 30px 0;
+
+    p {
+        font-size: 18px;
+        font-weight: 500;
+        font-style: italic;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    h4 {
+        font-size: 18px;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+}
+
+.music {
+    @extend %flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.spoti {
+    width: 50px;
+    margin: 20px;
+}
+
+audio {
+    margin-bottom: 50px;
+}
+
+/* ! FIN DEL MAIN DEL INDEX */

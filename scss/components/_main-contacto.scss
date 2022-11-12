@@ -1,0 +1,83 @@
+@import "./base/_variables";
+
+/* *INICIO DEL MAIN DE CONTACTO */
+
+.contacto {
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 0;
+}
+
+.formulario {
+    width: 40%;
+    margin: auto;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    border: 0.5px solid nth($colores, 1);
+
+    h3 {
+        text-align: center;
+        margin: 0;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 5px;
+        box-sizing: border-box;
+        font-size: 14px;
+        border: 0.5px solid nth($colores, 1);
+    }
+
+    textarea {
+        min-height: 100px;
+        max-height: 100px;
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+#boton {
+    background-color: nth($colores, 1);
+    color: nth($colores, 2);
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 20px;
+
+    &:hover {
+        background-color: nth($colores, 5);
+        cursor: pointer;
+    }
+}
+
+.mapa {
+    /* background-color: rgb(193, 128, 253); */
+    width: 40%;
+    margin: auto;
+
+    h3 {
+        text-align: center;
+        width: 100%;
+        font-size: 40px;
+        font-weight: 200;
+        margin: 20px 0;
+    }
+}
+
+.titulo-encuentranos {
+    display: flex;
+    flex-direction: column;
+    /* background-color: blueviolet; */
+    width: 100%;
+}
+
+/* ! FIN DEL MAIN DE CONTACTO */

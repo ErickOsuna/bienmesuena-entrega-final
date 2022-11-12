@@ -1,0 +1,232 @@
+@import "./base/_variables";
+
+/* * INICIO DEL MAIN DE NOSOTROS */
+.titulo {
+    h2 {
+        @extend %flex;
+        width: 100%;
+        margin: 0;
+        font-weight: 200;
+    }
+}
+
+.nosotros {
+    @extend %flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin: 0;
+
+    div img {
+        width: 400px;
+    }
+
+    p {
+        width: 80%;
+        margin-top: 80px;
+        font-weight: 200;
+        font-size: 18px;
+        text-align: justify;
+
+        span {
+            font-style: italic;
+            font-weight: 300;
+            font-size: 22px;
+        }
+    }
+}
+
+.submenu {
+    ul {
+        /* background-color: aquamarine; */
+        width: 100%;
+        height: auto;
+        @include flex (flex, flex-end, center);
+        text-transform: uppercase;
+        margin-bottom: 40px;
+
+        a {
+            padding: 20px;
+            transition: 0.6s;
+            font-weight: 500;
+            font-size: 16px;
+            text-decoration: none;
+
+            &:link {
+                color: nth($colores, 1);
+            }
+
+            &:visited {
+                color: nth($colores, 1);
+            }
+
+            &:hover {
+                color: nth($colores, 3);
+            }
+
+            &:active {
+                color: nth($colores, 4);
+            }
+        }
+    }
+}
+
+.submenu2 {
+    /* background-color: blueviolet; */
+    width: 100%;
+
+    ul {
+        /* background-color: aquamarine; */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        display: none;
+
+        a {
+            padding: 20px;
+            transition: 0.6s;
+            font-weight: 500;
+            font-size: 16px;
+            text-decoration: none;
+
+            &:link {
+                color: nth($colores, 1);
+            }
+
+            &:visited {
+                color: nth($colores, 1);
+            }
+
+            &:hover {
+                color: nth($colores, 3);
+            }
+
+            &:active {
+                color: nth($colores, 4);
+            }
+        }
+    }
+}
+
+.submenu3 {
+    ul {
+        /* background-color: aquamarine; */
+        width: 100%;
+        height: auto;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        display: none;
+
+        a {
+            padding: 20px;
+            transition: 0.6s;
+            font-weight: 500;
+            font-size: 16px;
+            text-decoration: none;
+
+            &:link {
+                color: nth($colores, 1);
+            }
+
+            &:visited {
+                color: nth($colores, 1);
+            }
+
+            &:hover {
+                color: nth($colores, 3);
+            }
+
+            &:active {
+                color: nth($colores, 4);
+            }
+        }
+    }
+}
+
+#director {
+    @extend %flex;
+    width: 100%;
+    height: auto;
+
+    h3 {
+        @extend %integrantes;
+    }
+}
+
+.members {
+    @include flex (flex, space-around, center);
+    width: 80%;
+    height: auto;
+    padding: 0 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    
+    h4 {
+        font-size: 22px;
+        font-weight: 500;
+        // padding: 20px;
+        font-style: italic;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 200;
+        padding: 20px 0 20px 0;
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+}
+
+.members2 {
+    width: 90%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    display: none;
+
+    h4 {
+        font-size: 22px;
+        font-weight: 500;
+        padding: 20px;
+        font-style: italic;
+    }
+    div p{
+        width: 100%;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 200;
+        padding: 20px 0 20px 0;
+        text-align: justify;
+    }
+}
+
+#sopranos {
+    h3 {
+        @extend %integrantes;
+    }
+}
+
+#contraltos {
+    h3 {
+        @extend %integrantes;
+    }
+}
+
+#tenores {
+    h3 {
+        @extend %integrantes;
+    }
+}
+
+#bajos {
+    h3 {
+        @extend %integrantes;
+    }
+}
+
+/* ! FIN DEL MAIN DE NOSOTROS */
