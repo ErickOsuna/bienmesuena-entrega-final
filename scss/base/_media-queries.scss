@@ -37,7 +37,7 @@
         margin: 50px 0 10px 0;
     }
 
-    .members {
+    .members, .miembros {
         display: none;
     }
 
@@ -323,10 +323,30 @@
 
 /* ? FIN @MEDIA QUERIES 620 PX*/
 
+/* TODO: INICIO @MEDIA QUERIES 540 PX*/
+
+@media screen and (max-width:540px) {
+
+    .members2{
+        div{
+            img{
+                width: 70%;
+            }
+        }
+    }
+
+}
+
+/* ? FIN @MEDIA QUERIES 540 PX*/
+
 
 /* TODO: INICIO @MEDIA QUERIES 410 PX*/
 
 @media screen and (max-width:410px) {
+
+    h3, h4{
+        scale: 0.8;
+    }
 
     .dropdown {
         visibility: visible;

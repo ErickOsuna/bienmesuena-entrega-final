@@ -22,7 +22,7 @@
     }
 
     p {
-        width: 80%;
+        width: 100%;
         margin-top: 80px;
         font-weight: 200;
         font-size: 18px;
@@ -156,9 +156,13 @@
     }
 }
 
+.resenia{
+    width: 80%;
+}
+
 .members {
     @include flex (flex, space-around, center);
-    width: 80%;
+    width: 100%;
     height: auto;
     padding: 0 50px;
     text-align: center;
@@ -170,7 +174,13 @@
         // padding: 20px;
         font-style: italic;
     }
-
+    div{
+        p{
+            margin:0;
+            margin-left: 10px;
+            padding: 10px;
+        }
+    }
     p {
         font-size: 18px;
         font-weight: 200;
@@ -178,6 +188,32 @@
         text-align: justify;
         margin-left: 20px;
         margin-right: 0;
+    }
+}
+
+.miembros {
+    @include flex (flex, space-around, center);
+    width: 100%;
+    height: auto;
+    padding: 0 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    
+    h4 {
+        font-size: 22px;
+        font-weight: 500;
+        // padding: 20px;
+        font-style: italic;
+    }
+    div{
+        p{
+            font-size: 18px;
+            font-weight: 200;
+            padding: 20px 0 20px 0;
+            text-align: justify;
+            margin-top: 0;
+            padding-right: 20px;
+        }
     }
 }
 
@@ -194,9 +230,13 @@
         padding: 20px;
         font-style: italic;
     }
-    div p{
-        width: 100%;
-    }
+    div{
+        p{
+            width: 100%;
+            margin-right: 20px;
+        }
+    } 
+
     p {
         font-size: 18px;
         font-weight: 200;
@@ -227,6 +267,10 @@
     h3 {
         @extend %integrantes;
     }
+}
+
+.miembros{
+    width: 100%;
 }
 
 /* ! FIN DEL MAIN DE NOSOTROS */

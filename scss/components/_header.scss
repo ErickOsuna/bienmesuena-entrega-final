@@ -14,7 +14,13 @@
     position: sticky;
     top: 0;
     z-index: 100;
-
+    .logo
+        a{
+            img{
+                width: 64px;
+                padding: 5px;
+            }
+    }
     ul {
         /* background-color: rgb(176, 176, 248); */
         @extend %flex;

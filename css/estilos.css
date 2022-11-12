@@ -83,6 +83,9 @@
   position: sticky;
   top: 0;
   z-index: 100; }
+  .encabezado .logo a img {
+    width: 64px;
+    padding: 5px; }
   .encabezado ul {
     /* background-color: rgb(176, 176, 248); */
     width: 100%;
@@ -282,7 +285,7 @@ audio {
   .nosotros div img {
     width: 400px; }
   .nosotros p {
-    width: 80%;
+    width: 100%;
     margin-top: 80px;
     font-weight: 200;
     font-size: 18px;
@@ -369,11 +372,14 @@ audio {
   width: 100%;
   height: auto; }
 
+.resenia {
+  width: 80%; }
+
 .members {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 80%;
+  width: 100%;
   height: auto;
   padding: 0 50px;
   text-align: center;
@@ -382,6 +388,10 @@ audio {
     font-size: 22px;
     font-weight: 500;
     font-style: italic; }
+  .members div p {
+    margin: 0;
+    margin-left: 10px;
+    padding: 10px; }
   .members p {
     font-size: 18px;
     font-weight: 200;
@@ -389,6 +399,27 @@ audio {
     text-align: justify;
     margin-left: 20px;
     margin-right: 0; }
+
+.miembros {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0 50px;
+  text-align: center;
+  margin-bottom: 60px; }
+  .miembros h4 {
+    font-size: 22px;
+    font-weight: 500;
+    font-style: italic; }
+  .miembros div p {
+    font-size: 18px;
+    font-weight: 200;
+    padding: 20px 0 20px 0;
+    text-align: justify;
+    margin-top: 0;
+    padding-right: 20px; }
 
 .members2 {
   width: 90%;
@@ -402,12 +433,16 @@ audio {
     padding: 20px;
     font-style: italic; }
   .members2 div p {
-    width: 100%; }
+    width: 100%;
+    margin-right: 20px; }
   .members2 p {
     font-size: 18px;
     font-weight: 200;
     padding: 20px 0 20px 0;
     text-align: justify; }
+
+.miembros {
+  width: 100%; }
 
 /* ! FIN DEL MAIN DE NOSOTROS */
 * {
@@ -726,7 +761,7 @@ audio {
   #bajos h3 {
     /* background-color: coral; */
     margin: 50px 0 10px 0; }
-  .members {
+  .members, .miembros {
     display: none; }
   .primeraSeccion {
     margin: 30px 0; }
@@ -908,8 +943,16 @@ audio {
     scale: 0.8; } }
 
 /* ? FIN @MEDIA QUERIES 620 PX*/
+/* TODO: INICIO @MEDIA QUERIES 540 PX*/
+@media screen and (max-width: 540px) {
+  .members2 div img {
+    width: 70%; } }
+
+/* ? FIN @MEDIA QUERIES 540 PX*/
 /* TODO: INICIO @MEDIA QUERIES 410 PX*/
 @media screen and (max-width: 410px) {
+  h3, h4 {
+    scale: 0.8; }
   .dropdown {
     visibility: visible;
     margin-left: 50px; }
